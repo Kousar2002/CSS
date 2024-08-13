@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .nav{
+        display:flex; 
+        justify-content:space-between; 
+        height:10%;       
+        align-items: center;  
+        /* border:1px solid black;   */
+        padding-right:50px;
+        padding-left:50px;
+        position: sticky;
+        top:0;
+        z-index:1;  
+        /* position:sticky; */
+        /* top:0; */
+        /* position: fixed;  */
+        background-color: white; 
+        /* position: fixed;      */
+    }
+    ul{
+        display: flex;
+        /* column-gap;   */
+        /* position: fixed;  */
+        /* justify-content: space-around; */
+    } 
+    ul li{
+        list-style-type: none;
+        /* display: flex;*/ 
+    } 
+    a{
+        text-decoration: none;
+        color:black;
+        padding:10px;
+        letter-spacing:4px;
+    }
+    a:hover{
+        background-color:hsl(0, 0%, 70%);
+        color: white;
+    }
+    .Img{
+          display: flex ; 
+          /* flex-direction: column-reverse;  */
+          align-items: flex-end;
+          background-image:url("hamburger.jpg");
+          height:100vh;
+          width:100%; 
+          /* background-size: cover; */
+          /* background-size: contain;
+          background-repeat: no-repeat; */
+          /* justify-content: center;  */
+        
+
+          /* position: relative; */
+    }
+    .container1{
+        /* margin-left:10%;  */
+        margin-top:5%;  
+        /* margin: auto;   */
+        display: flex;
+        /* border:1px solid black; */
+        justify-content: center;
+        /* align-items: flex-start; */
+        /* align-items: center;  */
+        column-gap:5% ;
+        /* width:80%;
+        height:60%;   */
+    }
+    .item1{
+        flex-basis:35%;
+        /* width:20px;  */
+        /* margin: auto; */
+        /* justify-content: center; */
+        /* text-align: center; */
+       }
+       .item2{
+        flex-basis:35%;
+        /* align-items: flex-start; */
+        /* justify-content: center; */
+        /* margin: auto; */
+        /* align-items: center;  */
+        /* margin-top: 5%; */
+        /* text-align: center; */
+        /* margin-left:-30px; */
+       }
+       .item3{
+        flex-basis:30%;
+        display: flex;
+        flex-direction: column;
+        column-gap:15px;
+        /* margin: auto; */
+        /* flex-direction: column; */
+        /* text-align: center; */
+        /* margin-left:-30px; */
+       }
+    .para1{
+          font-size:20px;
+       }
+       .container2{
+        /* margin-left:10%;  */
+        margin-top:5%;
+        /* margin: auto; */
+        display: flex;
+        /* flex-direction: column;  */
+        /* border:1px solid black; */
+        justify-content: center;
+        /*align-items: center;  */
+        column-gap:5%; 
+        /* width:80%;
+        height:60%; */
+       }
+       .item4{
+        flex-basis:30%;
+       }
+       .para2{
+        letter-spacing:3px;
+        font-size:1.2em;
+       }
+       .para3{
+        opacity:0.4;
+       }
+       .container3{
+        /* margin-left:10%;  */
+        margin-top:5%;
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column; 
+        /* row-gap:50%; */
+        /* border:1px solid black;  */
+        /* row-gap:10%; */
+        justify-content: center; 
+        padding:0% 15%;
+        /*align-items: center;  */
+        /* width:80%;  */
+        /*height:100%; */
+       }
+       .TEXT{
+        /* position: absolute;
+        bottom:20px;
+        left:20px; */
+        padding-left:2%;
+        padding-bottom:2%;
+        letter-spacing:5px;
+        word-spacing:5px;
+        font-size:2.3rem;
+        opacity:0.5;
+       }
+       p>input{
+        width:100%;
+        padding:30px 0px;
+        /* size:20; */
+        padding:5px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        box-sizing: border-box;
+        border: none;
+       }
+       .footer{
+        margin-top:5%;
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        background-color:aliceblue;
+        color: black;
+        height:15vh;
+       }
+       hr{
+        opacity:0.3;
+        padding:0% 15%;
+       }
+       .Menu{
+            display:none;
+          }
+       @media screen and (width<576px){
+        /* .nav{
+            background-color:blue;
+        } */
+         /* body{
+            overflow-x: hidden;
+         } */
+        .nav1{
+            font-size:1rem;
+            margin-left:-50px;
+        } 
+        .Menu{
+            display: block;
+            margin-right:30px;
+          }
+          ul{
+            display: none;
+          }
+          .Img{
+            background-size: contain;
+            background-repeat:no-repeat;  
+            height:35vh;
+            Width:80vw;
+          } 
+         /* .Img{ */
+            /* display: flex; */
+            /* margin: auto; */
+            /* flex-direction: column-reverse;  */
+            /* width:100%;
+            height:100vh; 
+            background-size: contain; 
+            background-repeat:no-repeat;   */
+            /* flex-direction: column-reverse; */
+            /* text-align: center; */
+         /* } */
+         .TEXT{
+            margin-top:10px;
+            font-size:1rem;
+        /* position: absolute;
+        bottom:20px;
+        left:20px; */
+        /* margin-top:30px; */
+        /* padding-left:2%;
+        padding-bottom:2%;
+        letter-spacing:5px;
+        word-spacing:5px;
+        font-size:2.3rem;
+        opacity:0.5; */
+       }
+       .container1{
+        flex-direction: column;
+        column-gap:0px;
+       }
+       #Img1{
+         width:90%;
+        }
+        .item2{
+         width:90%;
+        }
+        .para1{
+            font-size:15px;
+        }
+    .container2{
+        flex-direction: column;
+    }
+       } 
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav1">
+           <a href="#">Gourmet au Catering</a>       
+        </div>
+        <div class="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li> <a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="Img">
+        <!-- <img  src="hamburger.jpg" alt="" />  -->
+        <div class="TEXT">Le Catering</div>  
+   </div>
+   <main>
+   <div class="container1">
+    <div class="item1">
+        <img src="tablesetting2.jpg" alt="" id="Img1"/>
+    </div>
+    <div class="item2">
+        <p style="font-size:2em;letter-spacing:3px;text-align: center;">About Catering</p>
+        <p style="text-align: center; letter-spacing:3px;">Tradition since 1889</p>
+        <p class="para1">
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur 
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.
+        </p>
+        <p class="para1">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+            laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</div>
+</main>
+<hr/>
+<div class="container2">
+    <div class="item3">
+     <p style="text-align:center;font-size:4em;">Our Menu</h>
+     <div>
+         <p class="para2">Bread Basket</p>
+         <p class="para3">Assortment of fresh baked fruit breads and muffins 5.50</p>
+     </div>
+     <div>
+         <p class="para2">Honey Almond Granola with Fruits</p>
+         <p class="para3">Natural cerreal of honey toasted oats,raisins,almonds and dates 7.00</p>
+     </div>
+     <div>
+         <p class="para2">Belgian Waffle</p>
+         <p class="para3">Vanilla flavored batter with malted flour 7.50</p>
+     </div>
+     <div>
+         <p class="para2">Scrambled eggs</p>
+         <p class="para3">Scrambled eggs,roasted red pepper and garlic,with green onions 7.50</p>
+     </div>
+     <div>
+         <p class="para2">Blueberry Pancakes</p>
+         <p class="para3">With syrup,butter and lots of berries 8.50</p>
+     </div>
+    </div>
+    <div class="item4">
+        <img src="tablesetting.jpg" alt=""/>
+    </div> 
+</div>
+
+<div class=container3>
+    <!-- <div class="container4"> -->
+    <h1>Contact</h1>
+    <div>
+        <p>we offer full-service catering for any event,large or small.
+            We understand your needs and we will cater the food to satisfy 
+            the biggerst criteria of them all,both look and taste.
+            Do not hesitate to contact us.
+        </p>
+    </div>
+    <!-- <p>we offer full-service catering for any event,large or small.
+        We understand your needs and we will cater the food to satisfy 
+        the biggerst criteria of them all,both look and taste.
+        Do not hesitate to contact us.
+    </p> -->
+    <div>
+        <p style="color:#607d8b;font-size:18px;">Catering Service,42nd Living St,43043 New York,NY</p>
+    </div>
+    <!-- <p>Catering Service,42nd Living St,43043 New York,NY</p> -->
+    <!-- <p>you can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p> -->
+     <div>
+        <p>you can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+     </div>
+    <div>
+        <form>
+           <p><input type="text" placeholder="Name" required size="15"/></p>
+            <hr>
+           <p><input type="number" placeholder="How many people" size="15"/></p>
+            <hr>
+           <p><input type="datetime-local" placeholder="dd-mm-yyyy --:--" size="15"/></p>
+            <hr>
+           <p><input type="text" placeholder="Message\Special requirements" size="15"/></p>
+            <hr>
+            <button>SENDMESSAGE</button>
+        </form>
+      </div>
+    <!-- </div> -->
+    
+</div>
+<div class="footer">
+     <p>Powered by</p>
+</div>
+
+
+   
+</body>
+</html>
